@@ -1,0 +1,1577 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root
+{
+    --mycolor: linear-gradient(90deg, #20D4FE 0%, #B722FF 100%);
+    --myfont: "Roboto", sans-serif;
+}
+
+/* headerworkhere */
+
+
+
+header
+{   top: 0;
+    left: 0;
+    background-color: #000;
+    padding-top: 48px;
+    padding-bottom: 53px;
+    width: 100%;
+    height: 165px;
+    position: fixed;
+    z-index: 100000000;
+}
+#navBar
+{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 72px 0 72px;
+
+}
+#navlist
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    column-gap: 60px;
+}
+
+#imgLogo
+{
+    height: 50px;
+    width: 100%;
+}
+#imgLogo:hover
+{
+    cursor: pointer;
+}
+
+#navBarButton button
+{
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 100%);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700px;
+}
+#hiddenbuttonid
+{
+    height: 2% !important;
+    width: 2% !important;
+}
+
+#navBarButton button:hover
+{
+    cursor: pointer;
+}
+
+#navBarLinks
+{
+    margin-right: 45px;
+}
+.navLinks
+{
+    position: relative;
+    text-decoration: none;
+    color:white;
+    font-size: 23px;
+
+}
+#hiddenbutton
+{
+    color: white;
+    background-color: #000;
+    border: none;
+    display: none;
+    
+}
+#navlinks1stsec
+{
+    background:var(--mycolor);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#navlinks1stsec::after
+{
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    padding-top: 0px;
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 100%);
+    width: 100%;
+    height: 2px;
+ } 
+
+#navlist #navlinkslst :hover
+{
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 100%);
+    -webkit-background-clip: text;
+    color: transparent;    
+}
+
+ .navLinks:hover::after
+{
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    padding-top: 0px;
+    background: linear-gradient(90deg, #20D4FE 0%, #B722FF 100%);
+    width: 100%;
+    height: 2px;
+ } 
+
+@media all and (max-width:1024px)
+{
+    .navLinks
+    {
+        font-size: 20px;
+    }
+    #navBarButton button
+    {
+        font-size: 12px;
+        font-weight: 700px;
+    }
+    #imgLogo
+{
+    height: 40px;
+    width: 95%;
+}
+}
+@media all and (max-width:900px)
+{
+    #navBar
+{
+    padding: 5px 35px 0 35px;
+}
+    .navLinks
+    {
+        font-size: 15px;
+    }
+    #navBarButton button
+    {
+        font-size: 8px;
+        font-weight: 700px;
+        height: 35px;
+        
+    }
+
+    #imgLogo
+    {
+        height: 30px;
+        width: 90%;
+    }
+}
+
+@media all and (max-width:665px)
+{
+    .navLinks
+    {
+        display: none;
+    }
+    #navBarButton button
+    {
+        
+        display: none;
+    }
+    #imgLogo
+    {
+        height: 42px;
+        width: 75%; 
+    }
+    #navBarLogo
+    {
+        flex-shrink: 0;
+    }
+    header
+    {
+        height: 80px;
+    }
+
+    #navBar 
+    {   
+        margin-top: -30px;
+        padding: 0 32px 0 20px;
+    }
+    #hiddenbutton
+    {
+    display: block;
+    flex-shrink: 0;
+    font-size: 2rem;
+    }
+    #hiddenbutton:hover
+    {
+    cursor: pointer;
+    }
+    #navBarLinks
+    {
+        display: none;
+    }
+    
+}
+
+/* body work */
+/*  */
+/*  */
+
+body
+{   
+    padding-bottom: 4%;
+    margin: 0;
+    background-color: #000;
+}
+
+#upperSection
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 185px;
+    
+}
+#firstLine
+{
+    margin: 0;
+    color: white;
+    letter-spacing: -2px;
+    font-size: 62px;
+    font-weight: 500;
+    word-spacing: -4px;
+}
+#secondLine1
+{
+    margin: 0;
+    margin-top: -15px;
+    color: white;
+    font-size: 17px;
+    letter-spacing: -1px;
+    font-family: sans-serif;
+    
+
+}
+#secondLine2
+{
+    margin: 0;
+    margin-top: 5px;
+    color: white;
+    font-size: 17px;
+    letter-spacing: -1px;
+    font-family: sans-serif;
+}
+#secondLine3
+{
+    margin: 0;
+    margin-top: 5px;
+    color: white;
+    font-size: 17px;
+    letter-spacing: -1px;
+    font-family: sans-serif;
+}
+#firstLinespn
+{
+    background: linear-gradient(10deg, #20D4FE 0%, #B722FF 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 60px;
+    font-weight: 500;
+    word-spacing: 2px;
+    margin-top: 9px;
+    letter-spacing: -2.9px;
+}
+
+@media all and (max-width:1024px)
+{
+    #firstLine
+    {    
+    font-size: 58px;
+    }
+#secondLine1
+    {  
+    font-size: 14px;
+    }
+#secondLine2
+    {
+    font-size: 14px;
+    }
+#secondLine3
+    {
+    font-size: 14px;
+    }
+#firstLinespn
+    {
+    font-size: 58px;
+    }
+
+}
+@media all and (max-width:960px)
+{
+    #firstLine
+    {    
+    font-size: 53px;
+    }
+#secondLine1
+    {  
+    font-size: 13px;
+    }
+#secondLine2
+    {
+    font-size: 13px;
+    }
+#secondLine3
+    {
+    font-size: 13px;
+    }
+#firstLinespn
+    {
+    font-size: 53px;
+    }
+
+}
+@media all and (max-width:660px)
+{
+    #upperSection
+    {
+        display: flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 120px;
+        margin-left: 18px;
+        
+    }
+    #firstLine
+    {    
+        font-size: 34px;
+    }
+    #secondLine1
+    {
+        font-size: 13px;
+    }
+    #secondLine2
+    {
+        font-size: 13px;
+    }
+    #secondLine3
+    {
+    font-size: 13px;
+    }
+    #firstLinespn
+    { 
+    font-size: 31px;
+    padding-right: 2px;
+    }
+   
+}
+
+
+/* grid ki jagah picture wala kam  */
+/*  */
+/*  */
+/*  */
+
+#uppercenterimgsec
+{
+    margin: 60px 80px 0 80px;  
+}
+#uppercenterimgid
+{
+    width: 100%;
+}
+
+@media all and (max-width:1024px)
+{
+    #uppercenterimgsec
+{
+    margin: 40px 60px 0 60px;   
+}
+}
+@media all and (max-width:960px)
+{
+    #uppercenterimgsec
+{
+    margin: 40px 35px 0 35px;
+}
+}
+
+@media all and (max-width:660px)
+{
+    #uppercenterimgsec
+{
+    margin: 30px 20px 0 20px;  
+}
+}
+
+
+/* Our services wala kam */
+/*  */
+/*  */
+/*  */
+
+#ourServicesStart
+{
+    margin: 100px 0 0 70px;
+}
+#ourServices1
+{   
+    background: linear-gradient(45deg,#20D4FE 0%, #B722FF 15%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size:33px;
+    letter-spacing: -1.8px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+#ourServices2
+{   
+    color: white;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    word-spacing: -2.5px;
+    letter-spacing: -1px;
+}
+#ourServices3
+{   
+    color: white;
+    font-size: 40px;
+    margin-top: 0px;
+    word-spacing: -2.5px;
+    letter-spacing: -1px;
+}
+
+@media all and (max-width:1000px)
+{
+    #ourServices1
+    {   
+        font-size:28px;
+    }
+    #ourServices2
+    {   
+        font-size: 35px;
+    }
+    #ourServices3
+    {    
+        font-size: 35px;
+    }
+    #ourServicesStart
+    {
+        margin: 90px 0 0 40px;
+    }
+}
+@media all and (max-width:960px)
+{
+    #ourServices1
+    {   
+        font-size:23px;
+    }
+    #ourServices2
+    {   
+        font-size: 30px;
+        word-spacing: -2.5px;
+        letter-spacing: -0.5px;
+    }
+    #ourServices3
+    {    
+        font-size: 30px;
+        word-spacing: -2.5px;
+        letter-spacing: -0.5px;
+    }
+}
+@media all and (max-width:660px)
+{
+    #ourServicesStart
+    {
+        margin-top: 80px;
+        margin-left: 19px;
+    
+    }
+    #ourServices1
+    {   
+        font-size:19px;
+        padding-right: 2px;
+    }
+    #ourServices2
+    {   
+        font-size: 22px;
+        word-spacing: 0px;
+        letter-spacing: -0.8px;
+    }
+    #ourServices3
+    {    
+        font-size: 22px;
+        word-spacing: 0.1px;
+        letter-spacing: -0.8px;
+    }
+}
+
+
+/* Main services ka kam  */
+/*  */
+/*  */
+
+
+#mainServices
+{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 18px;
+    margin: 50px 75px 0 75px;
+    flex-wrap: wrap;   
+}
+.main-services
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid rgb(165, 164, 164);
+    border-radius: 5px;
+    color: white;
+    width: 20%;
+    padding: 40px 8px 50px 38px ;
+    flex: 0 0 32%;
+    flex-wrap: wrap;
+}
+.main-services:hover
+{
+    /* border-image: var(--mycolor) 1 / 2px stretch;
+    border-width: 2px;
+    -webkit-border-radius: 5px;
+    border-style: solid; */
+    border: 0.125rem solid transparent;
+    background: linear-gradient(#000, #000) padding-box, linear-gradient(to right, #20D4FE 0%, #B722FF 100%) border-box;
+    cursor: pointer;
+    #webDevlogo
+    {
+        background: var(--mycolor);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.first-spn
+{
+    margin-top: 15px;
+    padding-right: 4px;
+}
+
+#webDevlogo
+{
+   font-size: 22px !important; 
+}
+
+#webDevhd
+{
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+#webDevpara
+{
+    letter-spacing: -1px;
+    font-size: 18px;
+    max-height: 3.6em;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+#seeMoretrans
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin:35px 78px 0 0;
+}
+#seeMorespn
+{
+    
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+#seeMorelogo
+{   
+    font-size: 20px;
+    margin-top: 3px;
+    margin-left: 10px;
+    transition: all ease 0.5s;
+}
+#seeMorespn:hover
+{
+#seeMorelogo
+{
+    transform: translateX(13px)
+}
+}
+
+@media all and (max-width:1140px)
+{
+    #webDevlogo
+    {
+       font-size: 15px !important; 
+    }
+    
+    #webDevhd
+    {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+    #webDevpara
+    {
+        font-size: 14px;
+    }
+    .main-services
+    {
+        flex: 0 0 30%;
+        padding: 60px 0 35px 22px ;
+    }
+    #seeMorespn
+    {
+        font-size: 17px;
+    }
+    #seeMorelogo
+    {    
+        font-size: 18px;
+    }
+    #seeMoretrans
+    {
+        margin:33px 78px 0 0;
+    }
+
+}
+
+@media all and (max-width:1000px)
+{
+    #webDevlogo
+    {
+       font-size: 13px !important; 
+    }
+    
+    #webDevhd
+    {   
+        font-size: 18px;
+        font-weight: 550;
+        letter-spacing: -0.5px;
+    }
+    #webDevpara
+    {
+        font-size: 12px;
+    }
+    .main-services
+    {
+        flex: 0 0 30%;
+        padding: 50px 0 30px 20px;
+    }
+    #seeMorespn
+    {
+        font-size: 16px;
+    }
+    #seeMorelogo
+    {    
+        font-size: 17px;
+    }
+    #seeMoretrans
+    {
+        margin:30px 78px 0 0;
+    }
+    #mainServices
+    {
+    margin: 50px 40px 0 40px;
+    }
+}
+
+@media all and (max-width:960px)
+{
+    #webDevlogo
+    {
+       font-size: 13px !important; 
+    }
+    
+    #webDevhd
+    {
+        font-size: 18px;
+        font-weight: 525;
+    }
+    #webDevpara
+    {
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+    .main-services
+    {
+        flex: 0 0 48%;
+        padding: 10px 0 20px 10px ;
+    }
+    #seeMorespn
+    {
+        font-size: 15px;
+    }
+    #seeMorelogo
+    {    
+        font-size: 16px;
+    }
+    #seeMoretrans
+    {
+        margin:28px 78px 0 0;
+    }
+}
+@media all and (max-width:660px)
+{
+    #webDevlogo
+    {
+       font-size: 18px !important; 
+       padding-left: 2px;
+    }
+    
+    #webDevhd
+    {
+        font-size: 25px;
+        font-weight: 525;
+    }
+    #webDevpara
+    {
+        font-size: 15px;
+        word-spacing: 2px;
+        margin-top: -8px;
+    }
+    .main-services
+    {
+        flex: 0 0 100%;
+        padding: 0 0 20px 25px ;
+        
+        
+    }
+    #mainServices
+    {
+        margin: 40px 75px 0px 20px;
+        width: 91%;
+    }
+    #webImg
+    {
+        height:50px;
+        width: 35px ;
+    }
+    #seeMorespn
+    {
+        font-size: 11px;
+    }
+    #seeMorelogo
+    {    
+        font-size: 12px;
+    }
+    #seeMoretrans
+    {
+        margin:25px 30px 0 0;
+    }
+}
+
+
+
+/* Project failure wala kam  */
+/*  */
+/*  */
+#WUmainsect
+{
+    color: white;
+    display: flex;
+    margin: 50px 80px 0 80px;
+}
+.checkmarkf
+{
+    display: flex;
+    margin: 25px 0 0 0;
+}
+.checkheadings
+{
+    margin: 0 0 0 0;
+    font-size: 17px;
+    padding: 5px 50px 0 25px;
+    font-weight: 410;
+}
+.fa-check
+{
+    background: linear-gradient(180deg, #20D4FE 0%, #B722FF 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size:33px ;
+}
+#servmainheading
+{
+    font-size:35px;
+    margin: 0 0 0 0;
+    padding: 0 20px 0 0;
+}
+#servsubheading
+{
+    font-size: 17px;
+    margin: 20px 0 0 0;
+    font-weight: 410;
+    padding: 0 20px 0 0;
+}
+#checkmaindiv
+{
+    margin: 35px 0 0 0;
+}
+
+
+@media all and (max-width:1200px)
+{
+    #WUsect2img
+    {
+        height: 550px;
+    }
+
+    .checkheadings
+{
+    font-size: 13px;
+    font-weight: 400;
+}
+.fa-check
+{
+    font-size:28px ;
+}
+#servmainheading
+{
+    font-size:30px;
+}
+#servsubheading
+{
+    font-size: 13px;
+    font-weight: 400;
+}
+}
+
+@media all and (max-width:1024px)
+{
+    #WUsect2img
+    {
+        height: 520px;
+    }
+
+    .checkheadings
+{
+    font-size: 10px;
+    font-weight: 390;
+}
+.fa-check
+{
+    font-size:22px ;
+}
+#servmainheading
+{
+    font-size:25px;
+}
+#servsubheading
+{
+    font-size: 12px;
+    font-weight: 390;
+}
+#WUmainsect
+{
+    margin: 50px 40px 0 40px;
+}
+}
+@media all and (max-width:960px)
+{
+    #WUsect2img
+    {
+        height: 480px;
+        width: 330px;
+    }
+
+    .checkheadings
+{
+    font-size: 10px;
+    font-weight: 390;
+    padding: 5px 50px 0 15px;
+}
+.fa-check
+{
+    font-size:24px ;
+}
+#servmainheading
+{
+    font-size:23px;
+}
+#servsubheading
+{
+    font-size: 11px;
+    font-weight: 390;
+}
+}
+
+@media all and (max-width:780px)
+{
+    #WUmainsect
+    {
+        flex-direction: column-reverse;
+        margin: 38px 38px 0 38px;
+    }
+    #WUsect2img
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    .checkheadings
+{
+    font-size: 13px;
+    font-weight: 400;
+    
+}
+.fa-check
+{
+    font-size:28px ;
+    
+}
+#servmainheading
+{
+    font-size:30px;
+}
+#servsubheading
+{
+    font-size: 13px;
+    font-weight: 400;
+}
+#WUsect1
+{
+  margin: 38px 0 0 0;
+}
+}
+
+@media all and (max-width:660px)
+{
+    #WUmainsect
+    {
+        flex-direction: column-reverse;
+        margin: 28px 23px 0 23px;
+    }
+    #WUsect2img
+    {
+        height: 100%;
+        width: 100%;
+        object-fit:cover;
+    }
+
+    .checkheadings
+{
+    font-size: 13px;
+    font-weight: 400;
+    
+}
+.fa-check
+{
+    font-size:20px ;
+    
+}
+#servmainheading
+{
+    font-size:21px;
+}
+#servsubheading
+{
+    font-size: 12px;
+    font-weight: 450;
+}
+#WUsect1
+{
+  margin: 38px 0 0 0;
+}
+#WUsect2
+{
+   height: 200px ; 
+   margin: 38px 0 0 0;
+}
+}
+
+
+/* Product Empathy related work  */
+/*  */
+/*  */
+
+
+#numprodbtmmain
+{
+margin: 100px 80px 0 80px;
+color: white;
+}
+.howweworkspn
+{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+#Howweworksect
+{
+    width: 530px;
+}
+#insidecolorspn
+{
+    background: var(--mycolor);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#colornumbernumprod1
+{
+    font-size: 65px;
+    font-weight: 470;
+    background: linear-gradient(to right, #20D4FE 0%, #B722FF 20%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 60px 0 0 0;
+}
+#colornumbernumprod2
+{
+    font-size: 65px;
+    font-weight: 470;
+    background: linear-gradient(to right, #20D4FE 0%, #B722FF 20%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 60px 0 0 0;
+}
+#colornumbernumprod3
+{
+    font-size: 65px;
+    font-weight: 470;
+    background: linear-gradient(to right, #20D4FE 0%, #B722FF 13%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 60px 0 0 0;
+}
+#numberflex
+{
+    display: flex;
+    justify-content:space-between ;
+    gap: 50px;
+}
+.numberflexspn
+{
+width: 100%;
+}
+.numberparag
+{
+    text-align: justify;
+    font-size: 19px;
+    margin: 10px 0 0 0;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+.numberheading
+{
+    font-size: 35px;
+    margin: 20px 0 0 0;
+    letter-spacing: -1px;
+}
+
+@media all and (max-width:1024px)
+{
+    
+
+    #numberflex
+{
+    gap: 80px;
+}
+.numberparag
+{
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+}
+.numberheading
+{
+    font-size: 25px;
+    margin: 20px 0 0 0;
+    letter-spacing: -0.8px;
+}
+#colornumbernumprod1
+{
+    font-size: 58px;
+    font-weight: 460;
+    
+}
+#colornumbernumprod2
+{
+    font-size: 58px;
+    font-weight: 460;
+}
+#colornumbernumprod3
+{
+    font-size: 58px;
+    font-weight: 460;
+    
+}
+}
+@media all and (max-width:960px)
+{
+    .howweworkspn
+{
+   font-size: 24px; 
+}
+
+    #numprodbtmmain
+    {
+        margin: 90px 40px 0 40px;
+    }
+
+    #numberflex
+{
+    gap: 110px;
+}
+.numberparag
+{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+}
+.numberheading
+{
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    letter-spacing: -0.8px;
+}
+#colornumbernumprod1
+{
+    font-size: 51px;
+    font-weight: 450;
+    
+}
+#colornumbernumprod2
+{
+    font-size: 51px;
+    font-weight: 450;
+}
+#colornumbernumprod3
+{
+    font-size: 51px;
+    font-weight: 450;
+    
+}
+}
+@media all and (max-width:770px)
+{
+    #Howweworksect
+{
+    width: 400px;
+}
+    #numprodbtmmain
+    {
+        margin: 90px 28px 0 28px;
+    }
+    #numberflex
+{
+    gap: 80px;
+}
+.numberparag
+{
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    
+}
+.numberheading
+{
+    font-size: 15px;
+    margin: 20px 0 0 0;
+    letter-spacing: -0.8px;
+}
+#colornumbernumprod1
+{
+    font-size: 48px;
+    font-weight: 450;
+    
+}
+#colornumbernumprod2
+{
+    font-size: 48px;
+    font-weight: 450;
+}
+#colornumbernumprod3
+{
+    font-size: 48px;
+    font-weight: 450;
+    
+}
+}
+@media all and (max-width:670px)
+{
+    #numberflex
+    {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #colornumbernumprod1
+{
+    font-size: 38px;
+    font-weight: 450;
+    margin-top:40px;
+    background: linear-gradient(to right, #20D4FE 0%, #B722FF 11%);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+#colornumbernumprod2
+{
+    font-size: 38px;
+    font-weight: 450;
+    margin-top:40px;
+    background: linear-gradient(to right, #20D4FE 0%, #B722FF 11%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#colornumbernumprod3
+{
+    font-size: 38px;
+    font-weight: 450;
+    margin-top:40px;
+    background: linear-gradient(to right, #20D4FE 0%, #B722FF 11%);
+    -webkit-background-clip: text;
+    color: transparent;    
+}
+.howweworkspn
+{
+   font-size: 20px; 
+   letter-spacing: 0px;
+}
+#Howweworksect
+{
+    width: 400px;
+    margin:0 0 0 0; 
+}
+#numprodbtmmain
+    {
+        margin: 90px 22px 0 22px;
+    }
+    .numberheading
+{
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    letter-spacing: -0.5px;
+}
+.numberparag
+{
+    font-size: 15px;
+    margin: 20px 0 0 38
+    
+}
+}
+
+
+
+/* Footer related work  */
+/*  */
+/*  */
+footer
+{
+    color: white;
+}
+.footul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+#footSection
+{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    margin: 100px 0 0 0;
+    column-gap: 15px;
+}
+#cogentsect
+{
+    grid-column: 2 / span 4;
+
+}
+#firstList
+{
+grid-column-start: 7;
+grid-column-end: 9;
+}
+#secondList
+{
+    grid-column-start: 9;
+    grid-column-end: 11;
+}
+#thirdList
+{
+    grid-column-start: 11;
+    grid-column-end: 14;
+}
+.insidefootcont 
+{
+    padding-bottom: 35px;
+    font-size: 15px;
+}
+
+.foot-links, .foot-links-1
+{
+    text-decoration: none;
+    color: white;
+}
+
+.foot-links-1
+{
+padding-right: 15px;
+font-size: 21px;
+}
+.foottopheading
+{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    padding-bottom: 45px;
+}
+#address1
+{
+    overflow-y: hidden;
+}
+
+@media all and (max-width:1024px)
+{
+    .foot-links-1
+{
+padding-right: 10px;
+font-size: 14.5px;
+}
+.foottopheading
+{
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+#cogentimgfoot
+{
+width: 160px;
+}
+#cogentsectpara
+{
+font-size: 13px;
+}
+.insidefootcont 
+{
+    padding-bottom: 30px;
+    font-size: 13px;
+}
+}
+
+@media all and (max-width:960px)
+{
+    #footSection
+{
+    grid-template-columns: repeat(16, 1fr);
+    column-gap: 0px;
+}
+    #cogentsect
+    {
+        grid-column: 2 / span 3;
+    
+    }
+    #firstList
+    {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    }
+    #secondList
+    {
+        grid-column-start: 9;
+        grid-column-end: 11;
+    }
+    #thirdList
+    {
+        grid-column-start: 12;
+        grid-column-end: 15;
+    }
+    #cogentsectpara
+    {
+        font-size: 10.5px;
+    }
+    .foot-links-1
+    {
+        padding-right: 5px;
+        font-size: 10.5px;
+    }
+    .foottopheading
+    {
+        font-size: 10.5px;
+        font-weight: 500;
+        letter-spacing: -0.7px;
+    }
+    #cogentimgfoot
+    {
+    width: 120px;
+    }
+    .insidefootcont 
+    {
+    padding-bottom: 30px;
+    font-size: 9.25px;
+    }
+    .material-symbols-outlined, .move-logo
+    {
+        font-size: 13.5px !important;
+    }
+}
+@media all and (max-width:660px)
+{
+    .foot-links-1
+{
+padding-right: 10px;
+font-size: 10.5px;
+}
+.foottopheading
+{
+    font-size: 15.5px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+}
+#cogentimgfoot
+{
+width: 130px;
+}
+#cogentsectpara
+{
+font-size: 13px;
+}
+.insidefootcont 
+{
+    padding-bottom: 30px;
+    font-size: 11px;
+}
+    #footSection
+{
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows:repeat(1, 16fr) ;
+    column-gap: 0px;
+    row-gap: 10px;
+}
+    #cogentsect
+    {
+        grid-column: 2 / span 14;
+    
+    }
+    #firstList
+    {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    }
+    #secondList
+    {
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+    #thirdList
+    {
+        grid-column-start: 10;
+        grid-column-end: 16;
+    }
+    .material-symbols-outlined, .move-logo
+    {
+        font-size: 10.5px !important;
+    }
+}
+
+
+/* Last footer related work  */
+/*  */
+/*  */
+
+.lastfooticons
+{
+    background:linear-gradient(160deg, #20D4FE 0%, #B722FF 85%);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-left: 18px;
+    font-size: 23px;
+}
+#lastfootermain
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 80px 0 80px;
+    border-top: 1px solid gray;
+    padding: 35px 0 0 0;
+}
+#lastfootersub1
+{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+}
+
+@media all and (max-width:1024px)
+{
+    .lastfooticons
+    {
+        padding-left: 17px;
+        font-size: 21px;
+    }
+    #lastfootermain
+    {
+        
+        margin: 40px 60px 0 60px;
+        padding: 32px 0 0 0;
+    }
+    #lastfootersub1
+    {
+        font-size: 16px;
+        font-weight: 475;
+        letter-spacing: -0.4px;
+    }
+}
+@media all and (max-width:960px)
+{
+    .lastfooticons
+    {
+        padding-left: 16px;
+        font-size: 19px;
+    }
+    #lastfootermain
+    {
+        
+        margin: 40px 40px 0 40px;
+        padding: 31px 0 0 0;
+    }
+    #lastfootersub1
+    {
+        font-size: 15px;
+        font-weight: 450;
+        letter-spacing: -0.3px;
+    }
+}
+@media all and (max-width:660px)
+{
+    .lastfooticons
+    {
+        padding-left: 10px;
+        font-size: 11px;
+    }
+    #lastfootermain
+    {
+        
+        margin: 10px 20px 0 20px;
+        padding: 21px 0 0 0;
+    }
+    #lastfootersub1
+    {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: -0.3px;
+    }  
+}
